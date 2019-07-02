@@ -1,6 +1,20 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+//function addition(x, y) {
+//  return x + y;
+//}
 
+function additionClosure(x){
+  let addx = y =>{
+    return x + y;
+  }
+  return addx; 
+}
+//let addThree = y => addition(3, y);
+let addThree = additionClosure(3);
+console.log(addThree(4));
+console.log(addThree(5));
+console.log(addThree(6));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
