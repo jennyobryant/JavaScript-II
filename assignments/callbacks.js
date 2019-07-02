@@ -63,7 +63,15 @@ multiplyNums ( 2, 2, (result)=>
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  cb(list.filter (x => x=== item).length > 0); 
 }
+
+// console.log(contains(2, [1, 2])); 
+
+contains("yo-yo", items, result => {
+  console.log(result);
+});
+
 
 /* STRETCH PROBLEM */
 
