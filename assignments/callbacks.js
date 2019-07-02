@@ -65,8 +65,7 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
   cb(list.filter (x => x=== item).length > 0); 
 }
-
-// console.log(contains(2, [1, 2])); 
+ 
 
 contains("yo-yo", items, result => {
   console.log(result);
